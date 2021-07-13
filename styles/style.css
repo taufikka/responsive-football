@@ -1,0 +1,55 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common style or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:  #FFFFFF;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    background-color: #2D25A0;;
+}
+
+/* top part style */
+.match-container{
+    display: flex;
+    align-items: center;
+}
+.league-title{
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 156px;
+    
+}
+.container .match-info a{
+    text-decoration: none;
+    width: 168px;
+    height: 44px;
+    background-color:  #E02C6D;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    margin-left: 156px;  
+}
+.container .match-info .button:hover{
+    background-color:seagreen;   
+}
+.container .match-info .button:active{
+    background-color:seagreen;
+    box-shadow: 0 5px rgb(221, 55, 138);
+    transform: translateY(6px);
+}
+.container .banner img{
+    width: 556px;
+    height: 438px;
+    margin-top: 153px;
+    margin-right: 141px;
+    margin-bottom: 86px;
+    margin-left: 102px;
+}
+
+
+
