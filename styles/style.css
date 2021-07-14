@@ -168,6 +168,94 @@ footer img{
     margin-left: 80px;
 }
 
+/*------------
+   media query
+----------------*/
+
+@media only screen and (max-device-width: 688px) {
+    
+ /*----header---*/
+ .match-container{
+     width: 100%;
+     flex-direction: column;
+     align-items: center;
+ }
+ .match-info{
+     font-size: 18px;
+     margin-top: 50px;
+     margin-left: 10px;
+     margin-bottom: 20px;
+    
+ }
+ .match-container .banner img{
+     width: 350px;
+     height: 250px;
+     margin:  40px 15px 15px 20px;
+ }
+
+/*----player card section----*/
+ .container{
+     width: 100%;
+ }
+ .players{
+     grid-template-columns: repeat(1,1fr);
+ }
+ .player{
+     flex-direction: column;
+     padding: 7px;
+     margin: 10px;
+     
+ }
+
+ /*----match highlight section----*/
+ .highlights-container{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+ }
+.match-highlights{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+.match-highlights h1{
+    margin: 3px;
+    font-size: 20px;
+}
+.match-highlights p{
+    font-size: 16px;
+    padding: auto;
+}
+.match-highlights a{
+    padding: 0;
+}
+.match-image img{
+    width: 330px;
+    height: 300px;
+}
+
+/*----footer----*/
+footer{
+    width: 100%;
+    margin: 0;
+}
+footer img{
+    width: 300px;
+    height: 80px;
+    margin-right: 60px;
+}
+.footer-icon{
+    margin: 0;
+}
+.footer-copyright{
+    margin: 0;
+    padding-right: 30px;
+}  
+    
+}
+
 
 
 
