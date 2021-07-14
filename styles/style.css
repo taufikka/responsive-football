@@ -1,55 +1,175 @@
-/* font */
+/*------
+ font
+------ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/* common style or utilities */
+/*--------------------------
+ common style or utilities 
+ ---------------------------*/
 body{
     font-family: 'Poppins', sans-serif;
     background-color:  #FFFFFF;
     margin: 0;
+    padding: 0;
 }
 .container{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+/*--------------
+    header
+ ---------------- */
+
+.match-container{
     width: 100%;
-    background-color: #2D25A0;;
+    height: 80vh;
+    background-color: #2D25A0;
+    display: flex;
 }
 
-/* top part style */
-.match-container{
-    display: flex;
-    align-items: center;
-}
-.league-title{
-    font-size: 64px;
+.match-info{
+    font-size: 24px;
     font-weight: 700;
     color: #FFFFFF;
-    margin-left: 156px;
-    
+    margin-left: 10%;
+    margin-top: 150px;  
 }
-.container .match-info a{
+.match-container .banner img{
+    width: 556px;
+    height: 438px;
+    margin-top: 130px;
+    margin-left: 140px;
+    margin-right: 100px;
+}
+.match-container .match-info a{
     text-decoration: none;
-    width: 168px;
-    height: 44px;
     background-color:  #E02C6D;
     font-size: 16px;
     color: #FFFFFF;
     padding: 10px 24px;
-    margin-left: 156px;  
+     
 }
-.container .match-info .button:hover{
+.match-container .match-info .button:hover{
     background-color:seagreen;   
 }
-.container .match-info .button:active{
-    background-color:seagreen;
-    box-shadow: 0 5px rgb(221, 55, 138);
-    transform: translateY(6px);
+.banner{
+    transform: translate(0px,0px);
+     transition: all 1s ease;
+ }
+
+.banner:hover {
+    transform:scale(1.5);
+ }
+
+/*--------------------
+   players card style
+ ---------------------*/
+.players{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
-.container .banner img{
-    width: 556px;
-    height: 438px;
-    margin-top: 153px;
-    margin-right: 141px;
-    margin-bottom: 86px;
-    margin-left: 102px;
+.player{
+    width: 330px;
+    height: 474px;
+    padding: 10px;
+    margin-bottom: 27px;
+    margin-left: 35px;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
 }
+.player img{
+    width: 330px;
+}
+
+.player-name{
+    font-size: 22px;
+    font-weight: bold;
+}
+.player-bio{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+/*--------------------------
+   match highlights portion 
+ ----------------------------*/
+.highlights-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:60px;
+}
+.match-highlights{
+    width: 469px;
+    height: 309px;
+    padding-right: 120px;
+
+}
+.match-highlights h1{
+    font-size: 48px;
+    margin: 8px 0px;
+}
+.match-highlights p{
+    font-size: 16px;
+    color: #6C6C6C;
+}
+.match-highlights a{
+    text-decoration: none;
+    background-color:  #E02C6D;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px 24px;
+
+}
+.match-image img{
+    width: 567px;
+    height: 427px;
+}
+/*------------
+     footer
+ -----------  */
+
+footer{
+    width: 484px;
+    height: 213px;
+    margin-top: 158px;
+    margin-left: 475px;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer img{
+    width: 480px;
+    height: 110px;
+}
+.footer-icon{
+    width: 170px;
+    height: 32px;
+    margin-left: 100px;
+}
+.footer-icon i{
+    padding: 15px 10px;
+    font-size: 16px;
+    color: #777;
+    cursor: pointer; 
+}
+.footer-icon i:hover{
+    color: #E02C6D;
+}
+
+.footer-copyright{
+    color: black;
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+
+
 
 
 
